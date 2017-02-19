@@ -1,0 +1,1236 @@
+[INFO ][20170218 18:00:24,596][ContextLoader:285] Root WebApplicationContext: initialization started
+[INFO ][20170218 18:00:24,706][AbstractApplicationContext:512] Refreshing Root WebApplicationContext: startup date [Sat Feb 18 18:00:24 CST 2017]; root of context hierarchy
+[INFO ][20170218 18:00:24,768][XmlBeanDefinitionReader:316] Loading XML bean definitions from file [G:\tcc\tcc-transaction-v1.1.5\tcc-transaction-dubbo-web-trade\target\classes\config\spring\local\appcontext-service-dubbo.xml]
+[INFO ][20170218 18:00:25,018][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20170218 18:00:25,049][XmlBeanDefinitionReader:316] Loading XML bean definitions from file [G:\tcc\tcc-transaction-v1.1.5\tcc-transaction-dubbo-web-trade\target\classes\config\spring\local\appcontext-web-servlet.xml]
+[INFO ][20170218 18:00:25,439][PropertiesLoaderSupport:172] Loading properties file from class path resource [sample-dubbo-web-trade.properties]
+[INFO ][20170218 18:00:25,517][DefaultListableBeanFactory:603] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3dd47dcb: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,sample-dubbo-web-trade,com.alibaba.dubbo.config.RegistryConfig,placeOrderService,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,orderController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,contentNegotiationManager,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,freemarkerConfig,fmXmlEscape,fmHtmlEscape,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20170218 18:00:25,985][AbstractHandlerMethodMapping:180] Mapped "{[/placeorder],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.mengyun.tcctransaction.sample.dubbo.order.web.controller.OrderController.placeOrder(java.lang.String,long,long,long)
+[INFO ][20170218 18:00:25,985][AbstractHandlerMethodMapping:180] Mapped "{[/user/{userId}/shop/{shopId}/product/{productId}/confirm],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.mengyun.tcctransaction.sample.dubbo.order.web.controller.OrderController.productDetail(long,long,long)
+[INFO ][20170218 18:00:25,985][AbstractHandlerMethodMapping:180] Mapped "{[/user/{userId}/shop/{shopId}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.mengyun.tcctransaction.sample.dubbo.order.web.controller.OrderController.getProductsInShop(long,long)
+[INFO ][20170218 18:00:26,546][AbstractRegistry:232]  [DUBBO] Load registry store file .\.dubbo\web-cache, data: {org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService=dubbo://192.168.1.100:2882/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?anyhost=true&application=sample-dubbo-order&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductByShopId,findProductById&payload=88388608&pid=7556&retries=0&side=provider&timeout=60000&timestamp=1486795132372 empty://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=configurators&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=8236&revision=1.1.5&side=consumer&timestamp=1486795818729 empty://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=routers&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=8236&revision=1.1.5&side=consumer&timestamp=1486795818729}, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170218 18:00:26,593][ZkEventThread:64] Starting ZkClient event thread.
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:host.name=lilei-PC
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:java.version=1.7.0_80
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:java.vendor=Oracle Corporation
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:java.home=C:\Program Files\Java\jdk1.7.0_80\jre
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:java.class.path=F:\apache-maven-3.0.5\boot\plexus-classworlds-2.4.jar;D:\IntelliJ IDEA 2016.2\lib\idea_rt.jar
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;.;C:\Program Files\Java\jdk1.7.0_80\bin;F:\apache-maven-3.0.5\bin;C:\Program Files\nodejs\;D:\mysql-5.6.24-win32\bin;D:\SSH;C:\Users\lilei\AppData\Roaming\npm;.
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:java.io.tmpdir=C:\Users\lilei\AppData\Local\Temp\
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:java.compiler=<NA>
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:os.name=Windows 7
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:os.arch=amd64
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:os.version=6.1
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:user.name=lilei
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:user.home=C:\Users\lilei
+[INFO ][20170218 18:00:26,624][Environment:100] Client environment:user.dir=G:\tcc\tcc-transaction-v1.1.5\tcc-transaction-dubbo-web-trade
+[INFO ][20170218 18:00:26,624][ZooKeeper:438] Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@6401b48a
+[INFO ][20170218 18:00:26,671][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:00:26,671][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[INFO ][20170218 18:00:26,812][ClientCnxn$SendThread:1235] Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x15a509579120000, negotiated timeout = 30000
+[INFO ][20170218 18:00:26,812][ZkClient:449] zookeeper state changed (SyncConnected)
+[INFO ][20170218 18:00:26,858][AbstractRegistry:302]  [DUBBO] Register: consumer://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=consumers&check=false&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375, dubbo version: 2.5.3, current host: 192.168.1.100
+[INFO ][20170218 18:00:27,030][AbstractRegistry:325]  [DUBBO] Subscribe: consumer://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=providers,configurators,routers&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375, dubbo version: 2.5.3, current host: 192.168.1.100
+[INFO ][20170218 18:00:27,436][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url consumer://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=providers,configurators,routers&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375, urls: [empty://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=providers&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375, empty://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=configurators&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375, empty://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=routers&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375], dubbo version: 2.5.3, current host: 192.168.1.100
+[WARN ][20170218 18:00:27,451][AbstractApplicationContext:486] Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService org.mengyun.tcctransaction.sample.dubbo.order.web.controller.OrderController.placeOrderService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'placeOrderService': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Failed to check the status of the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService. No provider available for the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService from the url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=sample-dubbo-web-trade&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375 to the consumer 192.168.1.100 use dubbo version 2.5.3
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:636)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService org.mengyun.tcctransaction.sample.dubbo.order.web.controller.OrderController.placeOrderService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'placeOrderService': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Failed to check the status of the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService. No provider available for the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService from the url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=sample-dubbo-web-trade&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375 to the consumer 192.168.1.100 use dubbo version 2.5.3
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:526)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:295)
+	... 22 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'placeOrderService': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Failed to check the status of the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService. No provider available for the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService from the url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=sample-dubbo-web-trade&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375 to the consumer 192.168.1.100 use dubbo version 2.5.3
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:173)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:102)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1467)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:246)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:921)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:864)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:779)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:498)
+	... 24 more
+Caused by: java.lang.IllegalStateException: Failed to check the status of the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService. No provider available for the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService from the url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=sample-dubbo-web-trade&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375 to the consumer 192.168.1.100 use dubbo version 2.5.3
+	at com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:420)
+	at com.alibaba.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:300)
+	at com.alibaba.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:138)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObject(ReferenceBean.java:65)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:166)
+	... 32 more
+[INFO ][20170218 18:00:27,467][DefaultSingletonBeanRegistry:444] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3dd47dcb: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,sample-dubbo-web-trade,com.alibaba.dubbo.config.RegistryConfig,placeOrderService,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,orderController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,contentNegotiationManager,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,freemarkerConfig,fmXmlEscape,fmHtmlEscape,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][20170218 18:00:27,467][ContextLoader:331] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService org.mengyun.tcctransaction.sample.dubbo.order.web.controller.OrderController.placeOrderService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'placeOrderService': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Failed to check the status of the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService. No provider available for the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService from the url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=sample-dubbo-web-trade&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375 to the consumer 192.168.1.100 use dubbo version 2.5.3
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:636)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService org.mengyun.tcctransaction.sample.dubbo.order.web.controller.OrderController.placeOrderService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'placeOrderService': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Failed to check the status of the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService. No provider available for the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService from the url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=sample-dubbo-web-trade&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375 to the consumer 192.168.1.100 use dubbo version 2.5.3
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:526)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:295)
+	... 22 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'placeOrderService': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Failed to check the status of the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService. No provider available for the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService from the url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=sample-dubbo-web-trade&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375 to the consumer 192.168.1.100 use dubbo version 2.5.3
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:173)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:102)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1467)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:246)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:921)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:864)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:779)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:498)
+	... 24 more
+Caused by: java.lang.IllegalStateException: Failed to check the status of the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService. No provider available for the service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService from the url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=sample-dubbo-web-trade&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375 to the consumer 192.168.1.100 use dubbo version 2.5.3
+	at com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:420)
+	at com.alibaba.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:300)
+	at com.alibaba.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:138)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObject(ReferenceBean.java:65)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:166)
+	... 32 more
+[WARN ][20170218 18:02:30,468][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/WatcherEvent
+	at org.apache.zookeeper.ClientCnxn$SendThread.readResponse(ClientCnxn.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:94)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:366)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+Caused by: java.lang.ClassNotFoundException: org.apache.zookeeper.proto.WatcherEvent
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	... 4 more
+[INFO ][20170218 18:02:30,577][ZkClient:449] zookeeper state changed (Disconnected)
+[INFO ][20170218 18:02:32,502][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:32,502][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:32,502][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+Caused by: java.lang.ClassNotFoundException: org.apache.zookeeper.proto.SetWatches
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	... 3 more
+[INFO ][20170218 18:02:33,717][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:33,717][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:33,717][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:35,572][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:35,572][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:35,572][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:37,419][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:37,419][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:37,419][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:38,544][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:38,544][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:38,544][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:40,159][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:40,159][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:40,159][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:42,194][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:42,194][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:42,194][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:43,972][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:43,972][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:43,972][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:45,112][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:45,112][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:45,112][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:46,847][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:46,847][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:46,847][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:48,455][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:48,455][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:48,455][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:50,511][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:50,511][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:50,511][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:52,434][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:52,434][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:52,434][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:54,405][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:54,405][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:54,405][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:55,713][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:55,713][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:55,713][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:57,197][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:57,198][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:57,199][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:02:58,884][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:02:58,884][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:02:58,884][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:00,131][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:00,131][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:00,131][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:01,853][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:01,853][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:01,853][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:03,700][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:03,700][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:03,700][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:05,472][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:05,472][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:05,472][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:07,438][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:07,438][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:07,438][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:09,391][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:09,391][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:09,391][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:11,044][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:11,044][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:11,044][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:12,169][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:12,169][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:12,169][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:13,640][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:13,640][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:13,640][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:15,233][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:15,233][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:15,233][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:16,418][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:16,418][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:16,418][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:18,221][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:18,221][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:18,221][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:19,599][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:19,599][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:19,599][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:21,262][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:21,262][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:21,262][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:22,590][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:22,590][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:22,590][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:24,246][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:24,246][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:24,246][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:25,681][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:25,681][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:25,681][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:27,628][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:27,628][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:27,628][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:28,963][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:28,963][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:28,963][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:30,969][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:30,969][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:30,969][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:32,365][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:32,365][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:32,365][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:34,372][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:34,372][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:34,372][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:35,651][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:35,651][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:35,651][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:37,124][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:37,124][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:37,124][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:38,540][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:38,540][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:38,540][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:40,251][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:40,251][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:40,251][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:41,692][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:41,692][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:41,692][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:43,176][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:43,176][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:43,176][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:44,952][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:44,952][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:44,952][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:46,913][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:46,913][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:46,913][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:48,516][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:48,516][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:48,516][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:49,758][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:49,758][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:49,758][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:51,024][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:51,024][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:51,024][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:52,831][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:52,831][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:52,831][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:54,282][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:54,282][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:54,282][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:56,047][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:56,047][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:56,047][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:57,170][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:57,170][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:57,170][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:58,355][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:58,355][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:58,355][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:03:59,724][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:03:59,724][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:03:59,724][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:01,612][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:01,612][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:01,612][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:03,021][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:03,021][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:03,021][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:04,525][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:04,525][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:04,525][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:06,097][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:06,097][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:06,097][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:07,775][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:07,775][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:07,775][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:09,001][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:09,001][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:09,001][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:10,822][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:10,822][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:10,822][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:12,926][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:12,926][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:12,926][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:14,455][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:14,455][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:14,455][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:15,958][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:15,958][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:15,958][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:17,870][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:17,870][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:17,870][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:19,615][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:19,615][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:19,615][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:21,504][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:21,504][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:21,504][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:23,302][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:23,302][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:23,302][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:24,539][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:24,539][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:24,539][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:25,759][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:25,759][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:25,759][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:27,248][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:27,248][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:27,248][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:29,276][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:29,276][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:29,276][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:31,246][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:31,246][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:31,246][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:32,868][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:32,868][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:32,868][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:34,252][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:34,252][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:34,252][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:35,467][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:35,467][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:35,467][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:37,315][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:37,315][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:37,315][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:38,867][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:38,867][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:38,867][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:40,609][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:40,609][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:40,609][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:42,071][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:42,071][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:42,071][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:44,018][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:44,018][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:44,018][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:45,974][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:45,974][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:45,974][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:47,952][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:47,952][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:47,952][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:49,198][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:49,198][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:49,198][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:51,276][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:51,276][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:51,276][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:53,290][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:53,290][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:53,290][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:55,175][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:55,175][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:55,175][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:56,476][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:56,476][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:56,476][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:57,728][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:57,728][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:57,728][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:04:59,527][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:04:59,527][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:04:59,527][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:01,011][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:01,011][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:01,011][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:02,975][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:02,975][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:02,975][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:04,648][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:04,648][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:04,648][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:06,224][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:06,224][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:06,224][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:07,507][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:07,507][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:07,507][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:08,871][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:08,871][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:08,871][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:10,681][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:10,681][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:10,681][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:12,353][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:12,353][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:12,353][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:14,006][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:14,006][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:14,006][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:15,707][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:15,707][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:15,707][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:17,080][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:17,080][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:17,080][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:19,175][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:19,175][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:19,175][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:21,169][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:21,169][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:21,169][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:23,062][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:23,062][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:23,062][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:24,919][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:24,919][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:24,919][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:26,737][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:26,737][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:26,737][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:28,378][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:28,378][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:28,378][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:29,688][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:29,688][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:29,688][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:31,065][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:31,065][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:31,065][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:33,055][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:33,055][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:33,055][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:34,859][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:34,859][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:34,859][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:36,348][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:36,348][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:36,348][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:37,846][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:37,846][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:37,846][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:39,815][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:39,815][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:39,815][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:41,132][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:41,132][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:41,132][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:42,413][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:42,413][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:42,413][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:43,680][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:43,680][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:43,680][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:45,681][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:45,681][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:45,681][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:47,558][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:47,558][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:47,558][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:49,436][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:49,436][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:49,436][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:50,597][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:50,597][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:50,597][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:51,841][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:51,841][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:51,841][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:53,675][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:53,675][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:53,675][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:54,972][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:54,972][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:54,972][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:56,097][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:56,097][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:56,097][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:05:58,149][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:05:58,149][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:05:58,149][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:00,179][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:00,179][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:00,179][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:01,854][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:01,854][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:01,854][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:03,142][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:03,142][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:03,142][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:04,517][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:04,517][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:04,517][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:05,965][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:05,965][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:05,965][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:07,357][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:07,357][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:07,357][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:09,411][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:09,411][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:09,411][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:11,073][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:11,073][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:11,073][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:12,634][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:12,634][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:12,634][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:14,665][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:14,665][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:14,665][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:16,461][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:16,461][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:16,461][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:18,345][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:18,345][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:18,345][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:19,717][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:19,717][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:19,717][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:21,039][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:21,039][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:21,039][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:22,194][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:22,194][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:22,194][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:23,832][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:23,832][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[WARN ][20170218 18:06:23,832][ClientCnxn$SendThread:1102] Session 0x15a509579120000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.lang.NoClassDefFoundError: org/apache/zookeeper/proto/SetWatches
+	at org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:870)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:363)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:06:33,664][ContextLoader:285] Root WebApplicationContext: initialization started
+[INFO ][20170218 18:06:33,742][AbstractApplicationContext:512] Refreshing Root WebApplicationContext: startup date [Sat Feb 18 18:06:33 CST 2017]; root of context hierarchy
+[INFO ][20170218 18:06:33,805][XmlBeanDefinitionReader:316] Loading XML bean definitions from file [G:\tcc\tcc-transaction-v1.1.5\tcc-transaction-dubbo-web-trade\target\classes\config\spring\local\appcontext-service-dubbo.xml]
+[INFO ][20170218 18:06:34,117][?:?] using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+[INFO ][20170218 18:06:34,148][XmlBeanDefinitionReader:316] Loading XML bean definitions from file [G:\tcc\tcc-transaction-v1.1.5\tcc-transaction-dubbo-web-trade\target\classes\config\spring\local\appcontext-web-servlet.xml]
+[INFO ][20170218 18:06:34,507][PropertiesLoaderSupport:172] Loading properties file from class path resource [sample-dubbo-web-trade.properties]
+[INFO ][20170218 18:06:34,569][DefaultListableBeanFactory:603] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6e04b089: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,sample-dubbo-web-trade,com.alibaba.dubbo.config.RegistryConfig,placeOrderService,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,orderController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,contentNegotiationManager,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,freemarkerConfig,fmXmlEscape,fmHtmlEscape,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ][20170218 18:06:35,006][AbstractHandlerMethodMapping:180] Mapped "{[/user/{userId}/shop/{shopId}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.mengyun.tcctransaction.sample.dubbo.order.web.controller.OrderController.getProductsInShop(long,long)
+[INFO ][20170218 18:06:35,006][AbstractHandlerMethodMapping:180] Mapped "{[/placeorder],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.mengyun.tcctransaction.sample.dubbo.order.web.controller.OrderController.placeOrder(java.lang.String,long,long,long)
+[INFO ][20170218 18:06:35,006][AbstractHandlerMethodMapping:180] Mapped "{[/user/{userId}/shop/{shopId}/product/{productId}/confirm],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.mengyun.tcctransaction.sample.dubbo.order.web.controller.OrderController.productDetail(long,long,long)
+[INFO ][20170218 18:06:35,382][AbstractRegistry:232]  [DUBBO] Load registry store file .\.dubbo\web-cache, data: {org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService=empty://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=providers&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375 empty://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=configurators&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375 empty://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=routers&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=5588&revision=1.1.5&side=consumer&timestamp=1487412026375}, dubbo version: 2.5.3, current host: 127.0.0.1
+[INFO ][20170218 18:06:35,398][ZkEventThread:64] Starting ZkClient event thread.
+[INFO ][20170218 18:06:35,413][Environment:100] Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+[INFO ][20170218 18:06:35,413][Environment:100] Client environment:host.name=lilei-PC
+[INFO ][20170218 18:06:35,413][Environment:100] Client environment:java.version=1.7.0_80
+[INFO ][20170218 18:06:35,429][Environment:100] Client environment:java.vendor=Oracle Corporation
+[INFO ][20170218 18:06:35,429][Environment:100] Client environment:java.home=C:\Program Files\Java\jdk1.7.0_80\jre
+[INFO ][20170218 18:06:35,429][Environment:100] Client environment:java.class.path=F:\apache-maven-3.0.5\boot\plexus-classworlds-2.4.jar;D:\IntelliJ IDEA 2016.2\lib\idea_rt.jar
+[INFO ][20170218 18:06:35,429][Environment:100] Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;.;C:\Program Files\Java\jdk1.7.0_80\bin;F:\apache-maven-3.0.5\bin;C:\Program Files\nodejs\;D:\mysql-5.6.24-win32\bin;D:\SSH;C:\Users\lilei\AppData\Roaming\npm;.
+[INFO ][20170218 18:06:35,429][Environment:100] Client environment:java.io.tmpdir=C:\Users\lilei\AppData\Local\Temp\
+[INFO ][20170218 18:06:35,429][Environment:100] Client environment:java.compiler=<NA>
+[INFO ][20170218 18:06:35,429][Environment:100] Client environment:os.name=Windows 7
+[INFO ][20170218 18:06:35,429][Environment:100] Client environment:os.arch=amd64
+[INFO ][20170218 18:06:35,429][Environment:100] Client environment:os.version=6.1
+[INFO ][20170218 18:06:35,429][Environment:100] Client environment:user.name=lilei
+[INFO ][20170218 18:06:35,429][Environment:100] Client environment:user.home=C:\Users\lilei
+[INFO ][20170218 18:06:35,429][Environment:100] Client environment:user.dir=G:\tcc\tcc-transaction-v1.1.5\tcc-transaction-dubbo-web-trade
+[INFO ][20170218 18:06:35,429][ZooKeeper:438] Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@53e655ac
+[INFO ][20170218 18:06:35,460][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[INFO ][20170218 18:06:35,460][ClientCnxn$SendThread:852] Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+[INFO ][20170218 18:06:35,523][ClientCnxn$SendThread:1235] Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x15a509579120005, negotiated timeout = 30000
+[INFO ][20170218 18:06:35,523][ZkClient:449] zookeeper state changed (SyncConnected)
+[INFO ][20170218 18:06:35,585][AbstractRegistry:302]  [DUBBO] Register: consumer://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=consumers&check=false&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=7200&revision=1.1.5&side=consumer&timestamp=1487412395289, dubbo version: 2.5.3, current host: 192.168.1.100
+[INFO ][20170218 18:06:36,178][AbstractRegistry:325]  [DUBBO] Subscribe: consumer://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=providers,configurators,routers&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=7200&revision=1.1.5&side=consumer&timestamp=1487412395289, dubbo version: 2.5.3, current host: 192.168.1.100
+[INFO ][20170218 18:06:37,051][AbstractRegistry:422]  [DUBBO] Notify urls for subscribe url consumer://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=providers,configurators,routers&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=7200&revision=1.1.5&side=consumer&timestamp=1487412395289, urls: [dubbo://192.168.1.100:2882/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?anyhost=true&application=sample-dubbo-order&default.accepts=1000&default.threadpool=fixed&default.threads=100&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductByShopId,findProductById&payload=88388608&pid=3020&retries=0&side=provider&timeout=60000&timestamp=1487412150297, empty://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=configurators&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=7200&revision=1.1.5&side=consumer&timestamp=1487412395289, empty://192.168.1.100/org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService?application=sample-dubbo-web-trade&category=routers&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&pid=7200&revision=1.1.5&side=consumer&timestamp=1487412395289], dubbo version: 2.5.3, current host: 192.168.1.100
+[INFO ][20170218 18:06:37,317][AbstractClient:287]  [DUBBO] Successed connect to server /192.168.1.100:2882 from NettyClient 192.168.1.100 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x9a7a48fc, /192.168.1.100:50439 => /192.168.1.100:2882]], dubbo version: 2.5.3, current host: 192.168.1.100
+[INFO ][20170218 18:06:37,317][AbstractClient:105]  [DUBBO] Start NettyClient lilei-PC/192.168.1.100 connect to the server /192.168.1.100:2882, dubbo version: 2.5.3, current host: 192.168.1.100
+[INFO ][20170218 18:06:37,410][ReferenceConfig:423]  [DUBBO] Refer dubbo service org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService from url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=sample-dubbo-web-trade&check=false&default.accepts=1000&default.timeout=30000&dubbo=2.5.3&interface=org.mengyun.tcctransaction.sample.dubbo.order.api.PlaceOrderService&methods=getOrderStatusByMerchantOrderNo,placeOrder,getCapitalAccountByUserId,getRedPacketAccountByUserId,findProductById,findProductByShopId&payload=88388608&pid=7200&retries=0&revision=1.1.5&side=consumer&timeout=60000&timestamp=1487412395289, dubbo version: 2.5.3, current host: 192.168.1.100
+[INFO ][20170218 18:06:37,551][FreeMarkerConfigurer:125] ClassTemplateLoader for Spring macros added to FreeMarker configuration
+[INFO ][20170218 18:06:37,551][ContextLoader:325] Root WebApplicationContext: initialization completed in 3887 ms
+[INFO ][20170218 18:06:37,582][FrameworkServlet:457] FrameworkServlet 'springmvc': initialization started
+[INFO ][20170218 18:06:37,582][AbstractApplicationContext:512] Refreshing WebApplicationContext for namespace 'springmvc-servlet': startup date [Sat Feb 18 18:06:37 CST 2017]; parent: Root WebApplicationContext
+[INFO ][20170218 18:06:37,597][XmlBeanDefinitionReader:316] Loading XML bean definitions from class path resource [config/spring/local/appcontext-web-servlet.xml]
+[INFO ][20170218 18:06:37,660][DefaultListableBeanFactory:603] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@51a79c9d: defining beans [mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,orderController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,contentNegotiationManager,org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0,freemarkerConfig,fmXmlEscape,fmHtmlEscape,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6e04b089
+[INFO ][20170218 18:06:37,675][AbstractHandlerMethodMapping:180] Mapped "{[/user/{userId}/shop/{shopId}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.mengyun.tcctransaction.sample.dubbo.order.web.controller.OrderController.getProductsInShop(long,long)
+[INFO ][20170218 18:06:37,675][AbstractHandlerMethodMapping:180] Mapped "{[/placeorder],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.mengyun.tcctransaction.sample.dubbo.order.web.controller.OrderController.placeOrder(java.lang.String,long,long,long)
+[INFO ][20170218 18:06:37,675][AbstractHandlerMethodMapping:180] Mapped "{[/user/{userId}/shop/{shopId}/product/{productId}/confirm],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.mengyun.tcctransaction.sample.dubbo.order.web.controller.OrderController.productDetail(long,long,long)
+[INFO ][20170218 18:06:37,753][FreeMarkerConfigurer:125] ClassTemplateLoader for Spring macros added to FreeMarker configuration
+[INFO ][20170218 18:06:37,785][FrameworkServlet:476] FrameworkServlet 'springmvc': initialization completed in 203 ms
+[WARN ][20170218 18:18:05,886][ClientCnxn$SendThread:1102] Session 0x15a509579120005 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:384)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:68)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:366)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:18:05,996][ZkClient:449] zookeeper state changed (Disconnected)
+[INFO ][20170218 18:18:07,463][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN ][20170218 18:18:08,477][ClientCnxn$SendThread:1102] Session 0x15a509579120005 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:18:10,133][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN ][20170218 18:18:11,147][ClientCnxn$SendThread:1102] Session 0x15a509579120005 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[INFO ][20170218 18:18:12,955][ClientCnxn$SendThread:975] Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+[WARN ][20170218 18:18:13,955][ClientCnxn$SendThread:1102] Session 0x15a509579120005 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
